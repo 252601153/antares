@@ -69,19 +69,7 @@
                            />
                         </div>
                      </div>
-                     <div v-if="localConnection.client === 'pg'" class="form-group columns">
-                        <div class="column col-5 col-sm-12">
-                           <label class="form-label cut-text">{{ t('connection.connectionString') }}</label>
-                        </div>
-                        <div class="column col-7 col-sm-12">
-                           <input
-                              ref="pgString"
-                              v-model="localConnection.connString"
-                              class="form-input"
-                              type="text"
-                           >
-                        </div>
-                     </div>
+
                      <div v-if="!clientCustomizations.fileConnection" class="form-group columns">
                         <div class="column col-5 col-sm-12">
                            <label class="form-label cut-text">{{ t('connection.hostName') }}/IP</label>
@@ -503,10 +491,7 @@ const { connectWorkspace } = useWorkspacesStore();
 
 const clients = [
    { name: 'MySQL', slug: 'mysql' },
-   { name: 'MariaDB', slug: 'maria' },
-   { name: 'PostgreSQL', slug: 'pg' },
-   { name: 'SQLite', slug: 'sqlite' },
-   { name: 'Firebird SQL', slug: 'firebird' }
+   { name: 'MariaDB', slug: 'maria' }
 ];
 
 const firstInput: Ref<HTMLInputElement> = ref(null);

@@ -28,7 +28,7 @@ import hexToBinary, { HexChar } from './hexToBinary';
  * @param {ClientCode} dbType - The database type (e.g., 'pg', 'mysql').
  * @returns {string[]} - An array of separated SQL queries.
  */
-export const querySplitter =(sql: string, dbType: ClientCode): string[] => {
+export const querySplitter = (sql: string, dbType: ClientCode): string[] => {
    const queries: string[] = [];
    let currentQuery = '';
    let insideBlock = false;
@@ -66,28 +66,6 @@ export const querySplitter =(sql: string, dbType: ClientCode): string[] => {
          }
 
          currentQuery += char;
-
-         if (dbType === 'pg') {
-         // Handle dollar-quoted blocks in PostgreSQL
-            if (!insideString && line.slice(i).match(dollarTagRegex)) {
-               const match = line.slice(i).match(dollarTagRegex);
-               if (match) {
-                  const tag = match[0];
-                  if (!insideDollarTag) {
-                     insideDollarTag = true;
-                     dollarTagDelimiter = tag;
-                     currentQuery += tag;
-                     i += tag.length - 1;
-                  }
-                  else if (dollarTagDelimiter === tag) {
-                     insideDollarTag = false;
-                     dollarTagDelimiter = null;
-                     currentQuery += tag;
-                     i += tag.length - 1;
-                  }
-               }
-            }
-         }
 
          // Check BEGIN-END blocks
          if (!insideString && !insideDollarTag) {
@@ -301,8 +279,6 @@ export const valueToSqlString = (args: {
 
       if (['mysql', 'maria'].includes(client))
          parsedValue = `X'${buffer.toString('hex').toUpperCase()}'`;
-      else if (client === 'pg')
-         parsedValue = `decode('${buffer.toString('hex').toUpperCase()}', 'hex')`;
    }
    else if (NUMBER.includes(field.type))
       parsedValue = val;
@@ -403,12 +379,8 @@ export const formatJsonForSqlWhere = (jsonValue: object, clientType: antares.Cli
       case 'mysql':
          return ` = CAST('${formattedValue}' AS JSON)`;
       case 'maria':
-         return ` = '${formattedValue}'`;
-      case 'pg':
-         return `::text = '${formattedValue}'`;
-      case 'firebird':
-      case 'sqlite':
       default:
          return ` = '${formattedValue}'`;
    }
 };
+

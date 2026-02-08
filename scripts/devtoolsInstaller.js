@@ -28,6 +28,11 @@ const downloadFile = url => {
                .catch(reject);
          }
 
+         if (response.statusCode !== 200) {
+            reject(new Error(`Failed to download devtools: ${response.statusCode}`));
+            return;
+         }
+
          response.pipe(fileStream);
 
          response.on('close', () => {

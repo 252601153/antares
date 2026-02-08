@@ -10,21 +10,15 @@
  */
 import SSHConfig from '@fabio286/ssh2-promise/lib/sshConfig';
 import * as mysql from 'mysql2/promise';
-import * as pg from 'pg';
-import { FirebirdSQLClient } from 'src/main/libs/clients/FirebirdSQLClient';
 import MysqlExporter from 'src/main/libs/exporters/sql/MysqlExporter';
-import PostgreSQLExporter from 'src/main/libs/exporters/sql/PostgreSQLExporter';
 import MySQLImporter from 'src/main/libs/importers/sql/MySQLlImporter';
-import PostgreSQLImporter from 'src/main/libs/importers/sql/PostgreSQLImporter';
 
 import { MySQLClient } from '../../main/libs/clients/MySQLClient';
-import { PostgreSQLClient } from '../../main/libs/clients/PostgreSQLClient';
-import { SQLiteClient } from '../../main/libs/clients/SQLiteClient';
 
-export type Client = MySQLClient | PostgreSQLClient | SQLiteClient | FirebirdSQLClient
-export type ClientCode = 'mysql' | 'maria' | 'pg' | 'sqlite' | 'firebird'
-export type Exporter = MysqlExporter | PostgreSQLExporter
-export type Importer = MySQLImporter | PostgreSQLImporter
+export type Client = MySQLClient
+export type ClientCode = 'mysql' | 'maria'
+export type Exporter = MysqlExporter
+export type Importer = MySQLImporter
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export interface IpcResponse<T = any> {
@@ -39,9 +33,7 @@ export interface ClientParams {
    client: ClientCode;
    uid?: string;
    params:
-      mysql.ConnectionOptions & {schema: string; ssl?: mysql.SslOptions; ssh?: SSHConfig; readonly: boolean}
-      | pg.ClientConfig & {schema: string; ssl?: mysql.SslOptions; ssh?: SSHConfig; readonly: boolean}
-      | { databasePath: string; readonly: boolean };
+   mysql.ConnectionOptions & { schema: string; ssl?: mysql.SslOptions; ssh?: SSHConfig; readonly: boolean };
    poolSize?: number;
    logger?: () => void;
    querySplitter?: (sql: string, clieng?: string) => string[];

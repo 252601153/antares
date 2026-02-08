@@ -271,10 +271,7 @@ const emit = defineEmits(['close']);
 
 const clients = new Map([
    ['mysql', 'MySQL'],
-   ['maria', 'MariaDB'],
-   ['pg', 'PostgreSQL'],
-   ['sqlite', 'SQLite'],
-   ['firebird', 'Firebird SQL']
+   ['maria', 'MariaDB']
 ]);
 
 const searchTerm = ref('');

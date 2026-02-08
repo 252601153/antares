@@ -378,14 +378,7 @@ const runRoutine = (params?: string[]) => {
    switch (props.connection.client) { // TODO: move in a better place
       case 'maria':
       case 'mysql':
-      case 'pg':
          sql = `CALL ${originalRoutine.value.name}(${params.join(',')})`;
-         break;
-      case 'firebird':
-         sql = `EXECUTE PROCEDURE "${originalRoutine.value.name}"(${params.join(',')})`;
-         break;
-      case 'mssql':
-         sql = `EXEC ${originalRoutine.value.name} ${params.join(',')}`;
          break;
       default:
          sql = `CALL \`${originalRoutine.value.name}\`(${params.join(',')})`;

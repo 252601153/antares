@@ -13,10 +13,8 @@ import * as fs from 'fs';
 import { parentPort } from 'worker_threads';
 
 import { MySQLClient } from '../libs/clients/MySQLClient';
-import { PostgreSQLClient } from '../libs/clients/PostgreSQLClient';
 import { ClientsFactory } from '../libs/ClientsFactory';
 import MysqlExporter from '../libs/exporters/sql/MysqlExporter';
-import PostgreSQLExporter from '../libs/exporters/sql/PostgreSQLExporter';
 let exporter: antares.Exporter;
 
 log.transports.file.fileName = 'workers.log';
@@ -33,16 +31,13 @@ const exportHandler = async (data: any) => {
             client: client.name,
             params: client.config,
             poolSize: 5
-         }) as MySQLClient | PostgreSQLClient;
+         }) as MySQLClient;
          await connection.connect();
 
          switch (client.name) {
             case 'mysql':
             case 'maria':
                exporter = new MysqlExporter(connection as MySQLClient, tables, options);
-               break;
-            case 'pg':
-               exporter = new PostgreSQLExporter(connection as PostgreSQLClient, tables, options);
                break;
             default:
                parentPort.postMessage({

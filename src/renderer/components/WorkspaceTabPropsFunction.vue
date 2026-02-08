@@ -408,12 +408,6 @@ const runFunction = (params?: string[]) => {
       case 'mysql':
          sql = `SELECT \`${originalFunction.value.name}\` (${params.join(',')})`;
          break;
-      case 'pg':
-         sql = `SELECT ${originalFunction.value.name}(${params.join(',')})`;
-         break;
-      case 'mssql':
-         sql = `SELECT ${originalFunction.value.name} ${params.join(',')}`;
-         break;
       default:
          sql = `SELECT \`${originalFunction.value.name}\` (${params.join(',')})`;
    }

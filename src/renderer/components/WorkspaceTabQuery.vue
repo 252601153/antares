@@ -577,9 +577,6 @@ const beautify = () => {
          case 'maria':
             language = 'mariadb';
             break;
-         case 'pg':
-            language = 'postgresql';
-            break;
       }
 
       const formattedQuery = format(query.value, {

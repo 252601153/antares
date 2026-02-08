@@ -129,7 +129,7 @@ export const useWorkspacesStore = defineStore('workspaces', {
       getDatabaseVariable: state => (uid: string, name: string) => {
          return state.workspaces.find(workspace => workspace.uid === uid).variables.find(variable => variable.name === name);
       },
-      getWorkspaceTab (state) {
+      getWorkspaceTab(state) {
          return (tUid: string): WorkspaceTab => {
             if (!this.getSelected) return;
             const workspace = state.workspaces.find(workspace => workspace.uid === this.getSelected);
@@ -151,13 +151,13 @@ export const useWorkspacesStore = defineStore('workspaces', {
       }
    },
    actions: {
-      selectWorkspace (uid: string) {
+      selectWorkspace(uid: string) {
          if (!uid)
             this.selectedWorkspace = this.workspaces.length ? this.workspaces[0].uid : 'NEW';
          else
             this.selectedWorkspace = uid;
       },
-      async connectWorkspace (connection: ConnectionParams & { connString?: string }, args?: {mode?: string; signal?: AbortSignal}) {
+      async connectWorkspace(connection: ConnectionParams & { connString?: string }, args?: { mode?: string; signal?: AbortSignal }) {
          this.workspaces = (this.workspaces as Workspace[]).map(workspace => workspace.uid === connection.uid
             ? {
                ...workspace,
@@ -216,15 +216,6 @@ export const useWorkspacesStore = defineStore('workspaces', {
                         case 'mysql':
                         case 'maria':
                            clientCustomizations = customizations.mysql;
-                           break;
-                        case 'pg':
-                           clientCustomizations = customizations.pg;
-                           break;
-                        case 'sqlite':
-                           clientCustomizations = customizations.sqlite;
-                           break;
-                        case 'firebird':
-                           clientCustomizations = customizations.firebird;
                            break;
                      }
                      const dataTypes = clientCustomizations.dataTypes;
@@ -294,7 +285,7 @@ export const useWorkspacesStore = defineStore('workspaces', {
             })();
          });
       },
-      async refreshStructure (uid: string) {
+      async refreshStructure(uid: string) {
          const notificationsStore = useNotificationsStore();
 
          try {
@@ -315,7 +306,7 @@ export const useWorkspacesStore = defineStore('workspaces', {
             notificationsStore.addNotification({ status: 'error', message: err.stack });
          }
       },
-      async refreshSchema ({ uid, schema }: {uid: string; schema: string}) {
+      async refreshSchema({ uid, schema }: { uid: string; schema: string }) {
          const notificationsStore = useNotificationsStore();
 
          try {
@@ -341,7 +332,7 @@ export const useWorkspacesStore = defineStore('workspaces', {
             notificationsStore.addNotification({ status: 'error', message: err.stack });
          }
       },
-      async refreshCollations (uid: string) {
+      async refreshCollations(uid: string) {
          const notificationsStore = useNotificationsStore();
 
          try {
@@ -361,7 +352,7 @@ export const useWorkspacesStore = defineStore('workspaces', {
             notificationsStore.addNotification({ status: 'error', message: err.stack });
          }
       },
-      async refreshVariables (uid: string) {
+      async refreshVariables(uid: string) {
          const notificationsStore = useNotificationsStore();
 
          try {
@@ -381,7 +372,7 @@ export const useWorkspacesStore = defineStore('workspaces', {
             notificationsStore.addNotification({ status: 'error', message: err.stack });
          }
       },
-      async refreshEngines (uid: string) {
+      async refreshEngines(uid: string) {
          const notificationsStore = useNotificationsStore();
 
          try {
@@ -401,7 +392,7 @@ export const useWorkspacesStore = defineStore('workspaces', {
             notificationsStore.addNotification({ status: 'error', message: err.stack });
          }
       },
-      async refreshUsers (uid: string) {
+      async refreshUsers(uid: string) {
          const notificationsStore = useNotificationsStore();
 
          try {
@@ -421,7 +412,7 @@ export const useWorkspacesStore = defineStore('workspaces', {
             notificationsStore.addNotification({ status: 'error', message: err.stack });
          }
       },
-      removeConnected (uid: string) {
+      removeConnected(uid: string) {
          Connection.disconnect(uid);
          this.workspaces = (this.workspaces as Workspace[]).map(workspace => workspace.uid === uid
             ? {
@@ -435,11 +426,11 @@ export const useWorkspacesStore = defineStore('workspaces', {
 
          this.selectTab({ uid, tab: 0 });
       },
-      async switchConnection (connection: ConnectionParams & { connString?: string }) {
+      async switchConnection(connection: ConnectionParams & { connString?: string }) {
          await Connection.disconnect(connection.uid);
          return this.connectWorkspace(connection, { mode: 'switch' });
       },
-      addWorkspace (uid: string) {
+      addWorkspace(uid: string) {
          const workspace: Workspace = {
             uid,
             connectionStatus: 'disconnected',
@@ -457,11 +448,11 @@ export const useWorkspacesStore = defineStore('workspaces', {
 
          this.workspaces.push(workspace);
       },
-      removeWorkspace (uid: string) {
+      removeWorkspace(uid: string) {
          this.workspaces = this.workspaces.filter((w: Workspace) => w.uid !== uid);
          if (uid === this.selectedWorkspace) this.selectedWorkspace = 'NEW';
       },
-      changeBreadcrumbs (payload: Breadcrumb) {
+      changeBreadcrumbs(payload: Breadcrumb) {
          const breadcrumbsObj: Breadcrumb = {
             schema: null,
             table: null,
@@ -481,21 +472,21 @@ export const useWorkspacesStore = defineStore('workspaces', {
             }
             : workspace);
       },
-      addLoadedSchema (schema: string) {
+      addLoadedSchema(schema: string) {
          this.workspaces = (this.workspaces as Workspace[]).map(workspace => {
             if (workspace.uid === this.getSelected)
                workspace.loadedSchemas.add(schema);
             return workspace;
          });
       },
-      addLoadingElement (element: { name: string; schema: string; type: string }) {
+      addLoadingElement(element: { name: string; schema: string; type: string }) {
          this.workspaces = (this.workspaces as Workspace[]).map(workspace => {
             if (workspace.uid === this.getSelected)
                workspace.loadingElements.push(element);
             return workspace;
          });
       },
-      removeLoadingElement (element: { name: string; schema: string; type: string }) {
+      removeLoadingElement(element: { name: string; schema: string; type: string }) {
          this.workspaces = (this.workspaces as Workspace[]).map(workspace => {
             if (workspace.uid === this.getSelected) {
                const loadingElements = workspace.loadingElements.filter(el =>
@@ -509,7 +500,7 @@ export const useWorkspacesStore = defineStore('workspaces', {
             return workspace;
          });
       },
-      setSearchTerm (term: string) {
+      setSearchTerm(term: string) {
          this.workspaces = (this.workspaces as Workspace[]).map(workspace => workspace.uid === this.getSelected
             ? {
                ...workspace,
@@ -517,7 +508,7 @@ export const useWorkspacesStore = defineStore('workspaces', {
             }
             : workspace);
       },
-      setDatabase (databaseName: string) {
+      setDatabase(databaseName: string) {
          this.workspaces = (this.workspaces as Workspace[]).map(workspace => workspace.uid === this.getSelected
             ? {
                ...workspace,
@@ -525,7 +516,7 @@ export const useWorkspacesStore = defineStore('workspaces', {
             }
             : workspace);
       },
-      _addTab ({ uid, tab, content, type, autorun, schema, database, elementName, elementType, filePath }: WorkspaceTab) {
+      _addTab({ uid, tab, content, type, autorun, schema, database, elementName, elementType, filePath }: WorkspaceTab) {
          if (type === 'query')
             tabIndex[uid] = tabIndex[uid] ? ++tabIndex[uid] : 1;
 
@@ -556,7 +547,7 @@ export const useWorkspacesStore = defineStore('workspaces', {
 
          persistentStore.set(uid, (this.workspaces as Workspace[]).find(workspace => workspace.uid === uid).tabs);
       },
-      _replaceTab ({ uid, tab: tUid, type, schema, content, elementName, elementType, filePath }: WorkspaceTab) {
+      _replaceTab({ uid, tab: tUid, type, schema, content, elementName, elementType, filePath }: WorkspaceTab) {
          this.workspaces = (this.workspaces as Workspace[]).map(workspace => {
             if (workspace.uid === uid) {
                return {
@@ -584,7 +575,7 @@ export const useWorkspacesStore = defineStore('workspaces', {
 
          persistentStore.set(uid, (this.workspaces as Workspace[]).find(workspace => workspace.uid === uid).tabs);
       },
-      newTab ({ uid, content, type, autorun, schema, elementName, elementType, filePath }: WorkspaceTab) {
+      newTab({ uid, content, type, autorun, schema, elementName, elementType, filePath }: WorkspaceTab) {
          let tabUid;
          const workspaceTabs = (this.workspaces as Workspace[]).find(workspace => workspace.uid === uid);
 
@@ -710,7 +701,8 @@ export const useWorkspacesStore = defineStore('workspaces', {
                   : false;
 
                if (existentTab) {
-                  this._replaceTab({ uid,
+                  this._replaceTab({
+                     uid,
                      tab: existentTab.uid,
                      type,
                      database: workspaceTabs.database,
@@ -723,7 +715,8 @@ export const useWorkspacesStore = defineStore('workspaces', {
                }
                else {
                   tabUid = uidGen('T');
-                  this._addTab({ uid,
+                  this._addTab({
+                     uid,
                      tab: tabUid,
                      content,
                      type,
@@ -739,7 +732,8 @@ export const useWorkspacesStore = defineStore('workspaces', {
                break;
             default:
                tabUid = uidGen('T');
-               this._addTab({ uid,
+               this._addTab({
+                  uid,
                   tab: tabUid,
                   content,
                   type,
@@ -755,7 +749,7 @@ export const useWorkspacesStore = defineStore('workspaces', {
 
          this.selectTab({ uid, tab: tabUid });
       },
-      checkSelectedTabExists (uid: string) {
+      checkSelectedTabExists(uid: string) {
          const workspace = (this.workspaces as Workspace[]).find(workspace => workspace.uid === uid);
          const isSelectedExistent = workspace
             ? workspace.tabs.some(tab => tab.uid === workspace.selectedTab)
@@ -771,10 +765,10 @@ export const useWorkspacesStore = defineStore('workspaces', {
                this.selectTab({ uid, tab: workspace.tabs[workspace.tabs.length - 1].uid });
          }
       },
-      updateTabContent ({ uid, tab, type, schema, content, elementName, filePath }: WorkspaceTab) {
+      updateTabContent({ uid, tab, type, schema, content, elementName, filePath }: WorkspaceTab) {
          this._replaceTab({ uid, tab, type, schema, content, elementName, filePath });
       },
-      renameTabs ({ uid, schema, elementName, elementNewName }: WorkspaceTab) {
+      renameTabs({ uid, schema, elementName, elementNewName }: WorkspaceTab) {
          this.workspaces = (this.workspaces as Workspace[]).map(workspace => {
             if (workspace.uid === uid) {
                return {
@@ -797,7 +791,7 @@ export const useWorkspacesStore = defineStore('workspaces', {
 
          persistentStore.set(uid, (this.workspaces as Workspace[]).find(workspace => workspace.uid === uid).tabs);
       },
-      removeTab ({ uid, tab: tUid }: {uid: string; tab: string}) {
+      removeTab({ uid, tab: tUid }: { uid: string; tab: string }) {
          this.workspaces = (this.workspaces as Workspace[]).map(workspace => {
             if (workspace.uid === uid) {
                return {
@@ -812,7 +806,7 @@ export const useWorkspacesStore = defineStore('workspaces', {
          persistentStore.set(uid, (this.workspaces as Workspace[]).find(workspace => workspace.uid === uid).tabs);
          this.checkSelectedTabExists(uid);
       },
-      removeTabs ({ uid, schema, elementName, elementType }: WorkspaceTab) { // Multiple tabs based on schema and element name
+      removeTabs({ uid, schema, elementName, elementType }: WorkspaceTab) { // Multiple tabs based on schema and element name
          if (elementType === 'procedure') elementType = 'routine'; // TODO: pass directly "routine"
 
          this.workspaces = (this.workspaces as Workspace[]).map(workspace => {
@@ -833,40 +827,40 @@ export const useWorkspacesStore = defineStore('workspaces', {
          persistentStore.set(uid, (this.workspaces as Workspace[]).find(workspace => workspace.uid === uid).tabs);
          this.checkSelectedTabExists(uid);
       },
-      selectTab ({ uid, tab }: {uid: string; tab: string}) {
+      selectTab({ uid, tab }: { uid: string; tab: string }) {
          this.workspaces = (this.workspaces as Workspace[]).map(workspace => workspace.uid === uid
             ? { ...workspace, selectedTab: tab }
             : workspace
          );
       },
-      selectNextTab ({ uid }: {uid: string }) {
+      selectNextTab({ uid }: { uid: string }) {
          const workspace = (this.workspaces as Workspace[]).find(workspace => workspace.uid === uid);
 
          let newIndex = workspace.tabs.findIndex(tab => tab.selected || tab.uid === workspace.selectedTab) + 1;
 
-         if (newIndex > workspace.tabs.length -1)
+         if (newIndex > workspace.tabs.length - 1)
             newIndex = 0;
 
          this.selectTab({ uid, tab: workspace.tabs[newIndex].uid });
       },
-      selectPrevTab ({ uid }: {uid: string }) {
+      selectPrevTab({ uid }: { uid: string }) {
          const workspace = (this.workspaces as Workspace[]).find(workspace => workspace.uid === uid);
 
          let newIndex = workspace.tabs.findIndex(tab => tab.selected || tab.uid === workspace.selectedTab) - 1;
 
          if (newIndex < 0)
-            newIndex = workspace.tabs.length -1;
+            newIndex = workspace.tabs.length - 1;
 
          this.selectTab({ uid, tab: workspace.tabs[newIndex].uid });
       },
-      updateTabs ({ uid, tabs }: {uid: string; tabs: WorkspaceTab[]}) {
+      updateTabs({ uid, tabs }: { uid: string; tabs: WorkspaceTab[] }) {
          this.workspaces = (this.workspaces as Workspace[]).map(workspace => workspace.uid === uid
             ? { ...workspace, tabs }
             : workspace
          );
          persistentStore.set(uid, (this.workspaces as Workspace[]).find(workspace => workspace.uid === uid).tabs);
       },
-      setUnsavedChanges ({ uid, tUid, isChanged }: { uid: string; tUid: string; isChanged: boolean }) {
+      setUnsavedChanges({ uid, tUid, isChanged }: { uid: string; tUid: string; isChanged: boolean }) {
          this.workspaces = (this.workspaces as Workspace[]).map(workspace => {
             if (workspace.uid === uid) {
                return {

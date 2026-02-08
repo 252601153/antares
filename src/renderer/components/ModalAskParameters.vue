@@ -101,9 +101,6 @@ const runRoutine = () => {
          case 'mysql':
             qc = '"';
             break;
-         case 'pg':
-            qc = '\'';
-            break;
          default:
             qc = '"';
       }

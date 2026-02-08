@@ -317,15 +317,8 @@ const runRoutine = (params?: string[]) => {
    switch (workspace.value.client) { // TODO: move in a better place
       case 'maria':
       case 'mysql':
-      case 'pg':
          sql = `CALL ${localElement.value.name}(${params.join(',')})`;
          break;
-      case 'firebird':
-         sql = `EXECUTE PROCEDURE "${localElement.value.name}"(${params.join(',')})`;
-         break;
-      // case 'mssql':
-      //    sql = `EXEC ${localElement.value.name} ${params.join(',')}`;
-      //    break;
       default:
          sql = `CALL \`${localElement.value.name}\`(${params.join(',')})`;
    }
@@ -373,12 +366,6 @@ const runFunction = (params?: string[]) => {
       case 'mysql':
          sql = `SELECT \`${localElement.value.name}\` (${params.join(',')})`;
          break;
-      case 'pg':
-         sql = `SELECT ${localElement.value.name}(${params.join(',')})`;
-         break;
-      // case 'mssql':
-      //    sql = `SELECT ${localElement.value.name} ${params.join(',')}`;
-      //    break;
       default:
          sql = `SELECT \`${localElement.value.name}\` (${params.join(',')})`;
    }

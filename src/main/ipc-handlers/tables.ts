@@ -155,11 +155,6 @@ export default (connections: Record<string, antares.Client>) => {
                case 'maria':
                   escapedParam = `"${sqlEscaper(params.content)}"`;
                   break;
-               case 'pg':
-               case 'sqlite':
-               case 'firebird':
-                  escapedParam = `'${params.content.replaceAll('\'', '\'\'')}'`;
-                  break;
             }
          }
          else if (ARRAY.includes(params.type))
@@ -176,15 +171,6 @@ export default (connections: Record<string, antares.Client>) => {
                      fileBlob = fs.readFileSync(params.content);
                      escapedParam = `0x${fileBlob.toString('hex')}`;
                      break;
-                  case 'pg':
-                  case 'firebird':
-                     fileBlob = fs.readFileSync(params.content);
-                     escapedParam = `decode('${fileBlob.toString('hex')}', 'hex')`;
-                     break;
-                  case 'sqlite':
-                     fileBlob = fs.readFileSync(params.content);
-                     escapedParam = `X'${fileBlob.toString('hex')}'`;
-                     break;
                }
                reload = true;
             }
@@ -193,13 +179,6 @@ export default (connections: Record<string, antares.Client>) => {
                   case 'mysql':
                   case 'maria':
                      escapedParam = '\'\'';
-                     break;
-                  case 'pg':
-                  case 'firebird':
-                     escapedParam = 'decode(\'\', \'hex\')';
-                     break;
-                  case 'sqlite':
-                     escapedParam = 'X\'\'';
                      break;
                }
             }
@@ -212,12 +191,7 @@ export default (connections: Record<string, antares.Client>) => {
             switch (connections[params.uid]._client) {
                case 'mysql':
                case 'maria':
-               case 'pg':
-               case 'firebird':
                   escapedParam = params.content;
-                  break;
-               case 'sqlite':
-                  escapedParam = Number(params.content === 'true');
                   break;
             }
          }
@@ -348,11 +322,6 @@ export default (connections: Record<string, antares.Client>) => {
                         case 'maria':
                            escapedParam = `"${sqlEscaper(params.row[key].value)}"`;
                            break;
-                        case 'pg':
-                        case 'sqlite':
-                        case 'firebird':
-                           escapedParam = `'${params.row[key].value.replaceAll('\'', '\'\'')}'`;
-                           break;
                      }
                   }
                   else if (BLOB.includes(type)) {
@@ -365,10 +334,6 @@ export default (connections: Record<string, antares.Client>) => {
                               fileBlob = fs.readFileSync(params.row[key].value);
                               escapedParam = `0x${fileBlob.toString('hex')}`;
                               break;
-                           case 'pg':
-                              fileBlob = fs.readFileSync(params.row[key].value);
-                              escapedParam = `decode('${fileBlob.toString('hex')}', 'hex')`;
-                              break;
                         }
                      }
                      else {
@@ -376,9 +341,6 @@ export default (connections: Record<string, antares.Client>) => {
                            case 'mysql':
                            case 'maria':
                               escapedParam = '""';
-                              break;
-                           case 'pg':
-                              escapedParam = 'decode(\'\', \'hex\')';
                               break;
                         }
                      }
@@ -417,11 +379,6 @@ export default (connections: Record<string, antares.Client>) => {
                         case 'mysql':
                         case 'maria':
                            fakeValue = `'${sqlEscaper(fakeValue)}'`;
-                           break;
-                        case 'pg':
-                        case 'sqlite':
-                        case 'firebird':
-                           fakeValue = `'${fakeValue.replaceAll('\'', '\'\'')}'`;
                            break;
                      }
                   }
