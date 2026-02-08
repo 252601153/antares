@@ -1,3 +1,11 @@
+<!--
+  @file ModalProcessesListRow.vue
+  @description 进程列表行
+
+  进程列表中的单行组件。
+
+  @module renderer/components/ModalProcessesListRow
+-->
 <template>
    <div class="tr" @click="selectRow()">
       <div

@@ -1,3 +1,12 @@
+/**
+ * @file importer.ts
+ * @description 导入 Worker
+ *
+ * 本文件是数据库导入的后台 Worker 线程。
+ * 在独立线程中执行耗时的导入操作，避免阻塞主进程。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/workers/importer
+ */
 import SSHConfig from '@fabio286/ssh2-promise/lib/sshConfig';
 import * as antares from 'common/interfaces/antares';
 import { ImportOptions } from 'common/interfaces/importer';

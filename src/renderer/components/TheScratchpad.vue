@@ -1,3 +1,11 @@
+<!--
+  @file TheScratchpad.vue
+  @description 草稿本组件
+
+  笔记/待办事项管理面板。
+
+  @module renderer/components/TheScratchpad
+-->
 <template>
    <Teleport to="#window-content">
       <div class="modal active">

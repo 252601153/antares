@@ -1,3 +1,14 @@
+/**
+ * @file main.ts
+ * @description Electron 主进程入口文件
+ *
+ * 本文件是 Antares SQL Client 的主进程入口。
+ * 负责创建和管理应用程序主窗口、初始化 IPC 处理器、
+ * 注册快捷键、处理应用生命周期事件、主题设置等核心功能。
+ * 使用 electron-window-state 保存窗口状态，使用 electron-store 存储设置。
+ *
+ * @module main
+ */
 import * as remoteMain from '@electron/remote/main';
 import { app, BrowserWindow, ipcMain, nativeImage, safeStorage } from 'electron';
 import * as log from 'electron-log/main';
@@ -24,7 +35,7 @@ process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = 'true';
 let mainWindow: BrowserWindow;
 let mainWindowState: windowStateKeeper.State;
 
-async function createMainWindow () {
+async function createMainWindow() {
    const icon = require('../renderer/images/logo-64.png');
    const window = new BrowserWindow({
       width: mainWindowState.width,
@@ -166,7 +177,7 @@ app.on('browser-window-created', (event, window) => {
    });
 });
 
-function createAppMenu () {
+function createAppMenu() {
    const menuTemplate: OsMenu = {
       darwin: [
          {
@@ -203,6 +214,6 @@ function createAppMenu () {
    shortCutRegister.init();
 }
 
-function saveWindowState () {
+function saveWindowState() {
    mainWindowState.saveState(mainWindow);
 }

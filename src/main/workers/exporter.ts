@@ -1,3 +1,12 @@
+/**
+ * @file exporter.ts
+ * @description 导出 Worker
+ *
+ * 本文件是数据库导出的后台 Worker 线程。
+ * 在独立线程中执行耗时的导出操作，避免阻塞主进程。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/workers/exporter
+ */
 import * as antares from 'common/interfaces/antares';
 import * as log from 'electron-log/main';
 import * as fs from 'fs';

@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabQuery.vue
+  @description 查询标签页
+
+  SQL 查询的完整界面，包含编辑器和结果表格。
+
+  @module renderer/components/WorkspaceTabQuery
+-->
 <template>
    <div
       v-show="isSelected"

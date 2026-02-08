@@ -1,3 +1,13 @@
+/**
+ * @file settings.ts
+ * @description 设置状态管理 Store
+ *
+ * 本文件使用 Pinia 管理应用设置的状态。
+ * 包括主题、语言、编辑器配置、快捷键等设置项。
+ * 使用 electron-store 持久化存储设置。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/stores/settings
+ */
 import { ShortcutRecord } from 'common/shortcuts';
 import { ipcRenderer } from 'electron';
 import * as Store from 'electron-store';

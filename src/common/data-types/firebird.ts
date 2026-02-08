@@ -1,3 +1,14 @@
+/**
+ * @file firebird.ts
+ * @description Firebird SQL 数据库数据类型定义
+ *
+ * 本文件定义了 Firebird SQL 数据库支持的所有数据类型。
+ * 按类型分组：整数、浮点数、字符串、二进制、时间。
+ * Firebird 的数据类型较为精简，但覆盖了大多数常用场景。
+ * 支持 SMALLINT、INTEGER、BIGINT、DECIMAL、VARCHAR 等类型。
+ *
+ * @module common/data-types/firebird
+ */
 import { TypesGroup } from 'common/interfaces/antares';
 
 export default [

@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabQueryTableRow.vue
+  @description 结果表格行
+
+  查询结果表格的单行组件。
+
+  @module renderer/components/WorkspaceTabQueryTableRow
+-->
 <template>
    <div
       class="tr"

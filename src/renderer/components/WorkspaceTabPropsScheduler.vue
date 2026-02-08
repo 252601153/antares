@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabPropsScheduler.vue
+  @description 调度器属性页面
+
+  编辑调度任务的定义和配置。
+
+  @module renderer/components/WorkspaceTabPropsScheduler
+-->
 <template>
    <div v-show="isSelected" class="workspace-query-tab column col-12 columns col-gapless">
       <div class="workspace-query-runner column col-12">

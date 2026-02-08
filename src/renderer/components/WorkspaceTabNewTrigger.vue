@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabNewTrigger.vue
+  @description 新建触发器页面
+
+  创建新触发器的界面。
+
+  @module renderer/components/WorkspaceTabNewTrigger
+-->
 <template>
    <div v-show="isSelected" class="workspace-query-tab column col-12 columns col-gapless">
       <div class="workspace-query-runner column col-12">

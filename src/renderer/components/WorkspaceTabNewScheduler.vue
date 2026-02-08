@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabNewScheduler.vue
+  @description 新建调度器页面
+
+  创建新调度任务的界面。
+
+  @module renderer/components/WorkspaceTabNewScheduler
+-->
 <template>
    <div v-show="isSelected" class="workspace-query-tab column col-12 columns col-gapless">
       <div class="workspace-query-runner column col-12">

@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceExploreBar.vue
+  @description 数据库导航栏
+
+  左侧数据库结构树形导航。
+
+  @module renderer/components/WorkspaceExploreBar
+-->
 <template>
    <div class="column col-auto p-relative">
       <div ref="resizer" class="workspace-explorebar-resizer" />

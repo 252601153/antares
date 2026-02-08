@@ -1,3 +1,11 @@
+<!--
+  @file ModalAskCredentials.vue
+  @description 凭证输入对话框
+
+  请求输入用户名密码的对话框。
+
+  @module renderer/components/ModalAskCredentials
+-->
 <template>
    <Teleport to="#window-content">
       <div class="modal active modal-sm">

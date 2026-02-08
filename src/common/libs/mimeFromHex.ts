@@ -1,3 +1,12 @@
+/**
+ * @file mimeFromHex.ts
+ * @description 从十六进制获取 MIME 类型
+ *
+ * 本文件提供根据文件头（魔数）识别文件 MIME 类型的功能。
+ * 用于 BLOB 字段中存储的文件类型识别。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/common/libs/mimeFromHex
+ */
 import { match } from 'ciaplu';
 
 export function mimeFromHex (hex: string) {

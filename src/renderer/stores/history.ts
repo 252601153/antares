@@ -1,3 +1,12 @@
+/**
+ * @file history.ts
+ * @description 查询历史状态 Store
+ *
+ * 本文件使用 Pinia 管理 SQL 查询历史记录。
+ * 支持搜索历史、重用历史查询等功能。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/stores/history
+ */
 import { uidGen } from 'common/libs/uidGen';
 import * as Store from 'electron-store';
 import { defineStore } from 'pinia';

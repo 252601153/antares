@@ -1,3 +1,11 @@
+<!--
+  @file Workspace.vue
+  @description 工作区组件
+
+  数据库连接的主工作区容器，管理标签页和侧边栏。
+
+  @module renderer/components/Workspace
+-->
 <template>
    <div v-show="isSelected" class="workspace column columns col-gapless">
       <WorkspaceTabsContext

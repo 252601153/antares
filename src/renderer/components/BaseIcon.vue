@@ -1,3 +1,11 @@
+<!--
+  @file BaseIcon.vue
+  @description 图标组件
+
+  封装 MDI 图标库的图标显示组件。
+
+  @module renderer/components/BaseIcon
+-->
 <template>
    <SvgIcon
       v-if="type === 'mdi'"

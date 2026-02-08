@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceExploreBarTableContext.vue
+  @description 表右键菜单
+
+  表节点的右键上下文菜单。
+
+  @module renderer/components/WorkspaceExploreBarTableContext
+-->
 <template>
    <BaseContextMenu
       :context-event="contextEvent"

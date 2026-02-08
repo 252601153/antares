@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabPropsTableFields.vue
+  @description 表字段编辑
+
+  编辑表字段定义的组件。
+
+  @module renderer/components/WorkspaceTabPropsTableFields
+-->
 <template>
    <div
       ref="tableWrapper"

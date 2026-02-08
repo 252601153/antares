@@ -1,3 +1,12 @@
+/**
+ * @file validateSender.ts
+ * @description IPC 发送者验证
+ *
+ * 本文件提供 IPC 消息发送者的验证功能。
+ * 用于安全检查，确保消息来源可信。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/libs/misc/validateSender
+ */
 import { WebFrameMain } from 'electron';
 import * as path from 'path';
 

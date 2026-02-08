@@ -1,3 +1,12 @@
+/**
+ * @file useResultTables.ts
+ * @description 结果表格组合式函数
+ *
+ * 本文件提供查询结果表格的组合式函数。
+ * 封装表格数据处理、分页、排序等逻辑。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/composables/useResultTables
+ */
 import { TableDeleteParams, TableUpdateParams } from 'common/interfaces/tableApis';
 import { Component, Ref, ref } from 'vue';
 

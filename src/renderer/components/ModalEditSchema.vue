@@ -1,3 +1,11 @@
+<!--
+  @file ModalEditSchema.vue
+  @description 编辑模式对话框
+
+  编辑数据库模式属性。
+
+  @module renderer/components/ModalEditSchema
+-->
 <template>
    <Teleport to="#window-content">
       <div class="modal active">

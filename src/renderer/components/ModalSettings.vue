@@ -1,3 +1,11 @@
+<!--
+  @file ModalSettings.vue
+  @description 设置对话框
+
+  应用程序设置的主模态框。
+
+  @module renderer/components/ModalSettings
+-->
 <template>
    <Teleport to="#window-content">
       <div id="settings" class="modal active">

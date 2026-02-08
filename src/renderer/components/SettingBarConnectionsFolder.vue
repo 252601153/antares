@@ -1,3 +1,11 @@
+<!--
+  @file SettingBarConnectionsFolder.vue
+  @description 连接文件夹
+
+  设置栏中的连接分组文件夹。
+
+  @module renderer/components/SettingBarConnectionsFolder
+-->
 <template>
    <div
       v-tooltip="{

@@ -1,3 +1,11 @@
+<!--
+  @file TheSettingBar.vue
+  @description 设置侧边栏组件
+
+  左侧连接和设置导航栏。
+
+  @module renderer/components/TheSettingBar
+-->
 <template>
    <div id="settingbar">
       <div ref="sidebarConnections" class="settingbar-top-elements">

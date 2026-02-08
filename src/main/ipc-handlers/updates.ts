@@ -1,3 +1,12 @@
+/**
+ * @file updates.ts
+ * @description 应用更新 IPC 处理器
+ *
+ * 本文件处理应用程序更新相关的 IPC 事件。
+ * 包括检查更新、下载更新、安装更新等。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/ipc-handlers/updates
+ */
 import { ipcMain } from 'electron';
 import * as log from 'electron-log/main';
 import * as Store from 'electron-store';

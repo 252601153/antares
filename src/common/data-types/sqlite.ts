@@ -1,3 +1,14 @@
+/**
+ * @file sqlite.ts
+ * @description SQLite 数据库数据类型定义
+ *
+ * 本文件定义了 SQLite 数据库支持的所有数据类型。
+ * SQLite 采用动态类型系统，类型较为精简。
+ * 按类型分组：整数、浮点数、字符串、二进制、时间、其他。
+ * 包含 INTEGER、TEXT、BLOB、REAL、NUMERIC 等核心类型。
+ *
+ * @module common/data-types/sqlite
+ */
 import { TypesGroup } from 'common/interfaces/antares';
 
 export default [

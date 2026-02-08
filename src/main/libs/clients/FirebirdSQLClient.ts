@@ -1,3 +1,12 @@
+/**
+ * @file FirebirdSQLClient.ts
+ * @description Firebird SQL 客户端
+ *
+ * 本文件实现了 Firebird SQL 的数据库客户端。
+ * 使用 node-firebird 库，支持存储过程、触发器等功能。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/libs/clients/FirebirdSQLClient
+ */
 import dataTypes from 'common/data-types/firebird';
 import { FLOAT, NUMBER } from 'common/fieldTypes';
 import * as antares from 'common/interfaces/antares';

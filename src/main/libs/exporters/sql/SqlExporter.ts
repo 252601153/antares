@@ -1,3 +1,12 @@
+/**
+ * @file SqlExporter.ts
+ * @description SQL 导出器基类
+ *
+ * 本文件是 SQL 格式导出器的基类。
+ * 定义 SQL 转储的通用结构和方法。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/libs/exporters/sql/SqlExporter
+ */
 import * as moment from 'moment';
 
 import { MySQLClient } from '../../clients/MySQLClient';

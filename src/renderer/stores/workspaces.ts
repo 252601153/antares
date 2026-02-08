@@ -1,3 +1,13 @@
+/**
+ * @file workspaces.ts
+ * @description 工作区状态管理 Store
+ *
+ * 本文件使用 Pinia 管理工作区的状态。
+ * 工作区管理打开的标签页、当前选中的连接、查询结果等。
+ * 是应用状态管理的核心 Store。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/stores/workspaces
+ */
 import customizations from 'common/customizations';
 import {
    ClientCode,

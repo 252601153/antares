@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabNewView.vue
+  @description 新建视图页面
+
+  创建新视图的界面。
+
+  @module renderer/components/WorkspaceTabNewView
+-->
 <template>
    <div v-show="isSelected" class="workspace-query-tab column col-12 columns col-gapless">
       <div class="workspace-query-runner column col-12">

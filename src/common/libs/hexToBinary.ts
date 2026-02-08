@@ -1,3 +1,12 @@
+/**
+ * @file hexToBinary.ts
+ * @description 十六进制转二进制工具
+ *
+ * 本文件提供十六进制字符串与二进制数据的转换功能。
+ * 用于处理 BLOB、BINARY 等字段类型的显示。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/common/libs/hexToBinary
+ */
 const lookup = {
    0: '0000',
    1: '0001',

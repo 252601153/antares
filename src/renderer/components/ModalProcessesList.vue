@@ -1,3 +1,11 @@
+<!--
+  @file ModalProcessesList.vue
+  @description 进程列表对话框
+
+  显示数据库当前进程/连接。
+
+  @module renderer/components/ModalProcessesList
+-->
 <template>
    <Teleport to="#window-content">
       <div class="modal active">

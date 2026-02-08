@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceExploreBarSchemaContext.vue
+  @description 模式右键菜单
+
+  模式节点的右键上下文菜单。
+
+  @module renderer/components/WorkspaceExploreBarSchemaContext
+-->
 <template>
    <BaseContextMenu
       :context-event="contextEvent"

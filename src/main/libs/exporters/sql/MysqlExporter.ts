@@ -1,3 +1,12 @@
+/**
+ * @file MysqlExporter.ts
+ * @description MySQL 导出器
+ *
+ * 本文件实现了 MySQL 格式的数据库导出。
+ * 生成兼容 MySQL 的 SQL 转储文件。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/libs/exporters/sql/MysqlExporter
+ */
 import * as exporter from 'common/interfaces/exporter';
 import { valueToSqlString } from 'common/libs/sqlUtils';
 

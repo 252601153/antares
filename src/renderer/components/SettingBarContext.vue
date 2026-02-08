@@ -1,3 +1,11 @@
+<!--
+  @file SettingBarContext.vue
+  @description 设置栏右键菜单
+
+  设置栏的右键操作菜单。
+
+  @module renderer/components/SettingBarContext
+-->
 <template>
    <BaseContextMenu
       :context-event="contextEvent"

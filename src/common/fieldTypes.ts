@@ -1,3 +1,14 @@
+/**
+ * @file fieldTypes.ts
+ * @description 数据库字段类型分类定义
+ *
+ * 本文件定义了各种数据库字段类型的分类常量。
+ * 将不同数据库（MySQL、PostgreSQL、SQLite、Firebird）的字段类型
+ * 按照功能分组，如文本、数字、日期时间、二进制、空间数据等。
+ * 用于字段类型识别和数据处理。
+ *
+ * @module common/fieldTypes
+ */
 export const TEXT = [
    'CHAR',
    'VARCHAR',

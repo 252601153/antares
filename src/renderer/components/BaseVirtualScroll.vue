@@ -1,3 +1,11 @@
+<!--
+  @file BaseVirtualScroll.vue
+  @description 虚拟滚动组件
+
+  大数据量列表的虚拟滚动渲染。
+
+  @module renderer/components/BaseVirtualScroll
+-->
 <template>
    <div ref="root" class="vscroll-holder">
       <div

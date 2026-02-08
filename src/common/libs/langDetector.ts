@@ -1,3 +1,12 @@
+/**
+ * @file langDetector.ts
+ * @description SQL 语言检测器
+ *
+ * 本文件提供 SQL 方言检测功能。
+ * 根据 SQL 语句特征识别是 MySQL、PostgreSQL 等哪种数据库。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/common/libs/langDetector
+ */
 import { match } from 'ciaplu';
 
 function isJSON (str: string) {

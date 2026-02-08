@@ -1,3 +1,12 @@
+/**
+ * @file application.ts
+ * @description 应用状态管理 Store
+ *
+ * 本文件使用 Pinia 管理应用级别的状态。
+ * 包括设置模态框显示、更新状态、草稿本显示等。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/stores/application
+ */
 import { Ace } from 'ace-builds';
 import * as Store from 'electron-store';
 import { defineStore, storeToRefs } from 'pinia';

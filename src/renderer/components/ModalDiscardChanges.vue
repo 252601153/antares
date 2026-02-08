@@ -1,3 +1,11 @@
+<!--
+  @file ModalDiscardChanges.vue
+  @description 放弃更改对话框
+
+  确认放弃未保存更改的对话框。
+
+  @module renderer/components/ModalDiscardChanges
+-->
 <template>
    <ConfirmModal
       :confirm-text="t('general.discard')"

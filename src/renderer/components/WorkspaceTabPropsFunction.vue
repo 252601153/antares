@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabPropsFunction.vue
+  @description 函数属性页面
+
+  编辑函数定义和参数。
+
+  @module renderer/components/WorkspaceTabPropsFunction
+-->
 <template>
    <div v-show="isSelected" class="workspace-query-tab column col-12 columns col-gapless">
       <div class="workspace-query-runner column col-12">

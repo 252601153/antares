@@ -1,3 +1,11 @@
+<!--
+  @file ModalNewSchema.vue
+  @description 新建模式对话框
+
+  创建新数据库模式。
+
+  @module renderer/components/ModalNewSchema
+-->
 <template>
    <Teleport to="#window-content">
       <div class="modal active">

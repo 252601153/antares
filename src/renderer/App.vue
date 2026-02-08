@@ -1,3 +1,15 @@
+<!--
+  @file App.vue
+  @description Vue 应用根组件
+
+  本文件是 Antares SQL Client 的 Vue 根组件。
+  负责应用整体布局：标题栏、设置侧边栏、主内容区、页脚、通知面板等。
+  管理全局模态框（设置、连接、导出等）。
+  重写 console 方法以记录日志到控制台面板。
+  处理全局键盘事件和右键菜单。
+
+  @module renderer/App
+-->
 <template>
    <div id="wrapper" :class="[`theme-${applicationTheme}`, !disableBlur || 'no-blur']">
       <TheTitleBar />

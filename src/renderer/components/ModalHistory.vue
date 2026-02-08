@@ -1,3 +1,11 @@
+<!--
+  @file ModalHistory.vue
+  @description 查询历史对话框
+
+  浏览和搜索 SQL 查询历史。
+
+  @module renderer/components/ModalHistory
+-->
 <template>
    <Teleport to="#window-content">
       <div class="modal active">

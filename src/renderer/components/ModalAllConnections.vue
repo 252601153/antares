@@ -1,3 +1,11 @@
+<!--
+  @file ModalAllConnections.vue
+  @description 所有连接对话框
+
+  显示和管理所有保存的连接。
+
+  @module renderer/components/ModalAllConnections
+-->
 <template>
    <Teleport to="#window-content">
       <div class="modal active">

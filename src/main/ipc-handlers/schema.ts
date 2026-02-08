@@ -1,3 +1,13 @@
+/**
+ * @file schema.ts
+ * @description 模式操作 IPC 处理器
+ *
+ * 本文件处理数据库模式相关的 IPC 事件。
+ * 包括获取模式信息、导出模式、创建模式等。
+ * 是数据库结构操作的核心处理器。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/ipc-handlers/schema
+ */
 import * as antares from 'common/interfaces/antares';
 import * as workers from 'common/interfaces/workers';
 import { dialog, ipcMain } from 'electron';

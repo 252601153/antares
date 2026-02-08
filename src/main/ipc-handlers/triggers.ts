@@ -1,3 +1,12 @@
+/**
+ * @file triggers.ts
+ * @description 触发器 IPC 处理器
+ *
+ * 本文件处理数据库触发器相关的 IPC 事件。
+ * 包括创建、修改、删除触发器等。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/ipc-handlers/triggers
+ */
 import * as antares from 'common/interfaces/antares';
 import { ipcMain } from 'electron';
 

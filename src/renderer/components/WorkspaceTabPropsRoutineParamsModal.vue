@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabPropsRoutineParamsModal.vue
+  @description 过程参数对话框
+
+  编辑存储过程参数的模态框。
+
+  @module renderer/components/WorkspaceTabPropsRoutineParamsModal
+-->
 <template>
    <ConfirmModal
       :confirm-text="t('general.confirm')"

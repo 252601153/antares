@@ -1,3 +1,13 @@
+/**
+ * @file BaseExporter.ts
+ * @description 导出器基类
+ *
+ * 本文件定义了数据导出器的抽象基类。
+ * 提供导出进度回调、文件写入等通用功能。
+ * MySQL、PostgreSQL 导出器继承此类。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/libs/exporters/BaseExporter
+ */
 import * as exporter from 'common/interfaces/exporter';
 import * as EventEmitter from 'events';
 import * as fs from 'fs';

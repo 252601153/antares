@@ -1,3 +1,11 @@
+<!--
+  @file BaseContextMenu.vue
+  @description 右键菜单组件
+
+  可复用的右键上下文菜单。
+
+  @module renderer/components/BaseContextMenu
+-->
 <template>
    <div class="context" :class="[{ 'bottom': isBottom }, { 'right': isRight }]">
       <a

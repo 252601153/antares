@@ -1,3 +1,12 @@
+/**
+ * @file colorShade.ts
+ * @description 颜色明暗调整工具
+ *
+ * 本文件提供调整颜色明暗度的功能。
+ * 用于根据基础颜色生成变体色。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/libs/colorShade
+ */
 export const colorShade = (color: string, amount: number) => {
    color = color.replaceAll('#', '');
    if (color.length === 3) color = color[0] + color[0] + color[1] + color[1] + color[2] + color[2];

@@ -1,3 +1,11 @@
+<!--
+  @file BaseLoader.vue
+  @description 加载指示器组件
+
+  显示加载中状态的动画指示器。
+
+  @module renderer/components/BaseLoader
+-->
 <template>
    <div class="empty">
       <div class="loading loading-lg" />

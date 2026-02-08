@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabNewMaterializedView.vue
+  @description 新建物化视图
+
+  创建 PostgreSQL 物化视图的界面。
+
+  @module renderer/components/WorkspaceTabNewMaterializedView
+-->
 <template>
    <div v-show="isSelected" class="workspace-query-tab column col-12 columns col-gapless">
       <div class="workspace-query-runner column col-12">

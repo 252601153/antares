@@ -1,3 +1,11 @@
+<!--
+  @file ScratchpadNote.vue
+  @description 草稿本笔记项
+
+  单个草稿本笔记的显示组件。
+
+  @module renderer/components/ScratchpadNote
+-->
 <template>
    <div
       class="tile my-2"

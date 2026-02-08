@@ -1,3 +1,12 @@
+/**
+ * @file ClientsFactory.ts
+ * @description 数据库客户端工厂类
+ *
+ * 本文件实现了工厂模式的数据库客户端创建。
+ * 根据数据库类型（MySQL、PostgreSQL 等）创建对应的客户端实例。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/libs/ClientsFactory
+ */
 import * as antares from 'common/interfaces/antares';
 
 import { FirebirdSQLClient } from './clients/FirebirdSQLClient';

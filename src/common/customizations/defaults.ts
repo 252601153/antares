@@ -1,3 +1,14 @@
+/**
+ * @file defaults.ts
+ * @description 数据库自定义配置的默认值
+ *
+ * 本文件定义了所有数据库客户端的默认配置项。
+ * 所有配置项初始值都设为 false 或 null，
+ * 各数据库特定配置文件（mysql.ts、postgresql.ts 等）会覆盖这些默认值。
+ * 包含连接设置、功能开关、结构支持、DDL 操作等配置。
+ *
+ * @module common/customizations/defaults
+ */
 import { Customizations } from '../interfaces/customizations';
 
 // Everything OFF

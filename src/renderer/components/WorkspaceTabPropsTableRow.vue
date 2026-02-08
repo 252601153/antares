@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabPropsTableRow.vue
+  @description 表字段行
+
+  表结构编辑中的单行字段组件。
+
+  @module renderer/components/WorkspaceTabPropsTableRow
+-->
 <template>
    <div class="tr" @contextmenu.prevent="!editingField ? emit('contextmenu', $event, localRow._antares_id) : null">
       <div class="td p-0" tabindex="0">

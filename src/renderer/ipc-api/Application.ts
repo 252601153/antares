@@ -1,3 +1,12 @@
+/**
+ * @file Application.ts
+ * @description 应用 IPC API
+ *
+ * 本文件封装了应用级别的 IPC 调用。
+ * 提供便捷的方法调用主进程的应用功能。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/ipc-api/Application
+ */
 import { ShortcutRecord } from 'common/shortcuts';
 import { ipcRenderer, OpenDialogOptions, OpenDialogReturnValue } from 'electron';
 

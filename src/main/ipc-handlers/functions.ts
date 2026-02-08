@@ -1,3 +1,12 @@
+/**
+ * @file functions.ts
+ * @description 函数管理 IPC 处理器
+ *
+ * 本文件处理数据库函数相关的 IPC 事件。
+ * 包括创建、修改、删除函数等。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/ipc-handlers/functions
+ */
 import * as antares from 'common/interfaces/antares';
 import { ipcMain } from 'electron';
 

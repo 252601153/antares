@@ -1,3 +1,14 @@
+/**
+ * @file firebird.ts
+ * @description Firebird SQL 数据库自定义配置
+ *
+ * 本文件定义了 Firebird SQL 数据库特有的配置项。
+ * 包括默认端口（3050）、默认用户（SYSDBA）、
+ * 支持的功能（表、视图、触发器、存储过程）。
+ * Firebird 是一个关系型数据库，常用于嵌入式应用。
+ *
+ * @module common/customizations/firebird
+ */
 import firebirdTypes from '../data-types/firebird';
 import { Customizations } from '../interfaces/customizations';
 import { defaults } from './defaults';

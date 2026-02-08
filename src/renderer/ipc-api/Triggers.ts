@@ -1,3 +1,11 @@
+/**
+ * @file Triggers.ts
+ * @description 触发器 IPC API
+ *
+ * 本文件封装了触发器相关的 IPC 调用。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/ipc-api/Triggers
+ */
 import { AlterTriggerParams, CreateTriggerParams, IpcResponse } from 'common/interfaces/antares';
 import { ipcRenderer } from 'electron';
 

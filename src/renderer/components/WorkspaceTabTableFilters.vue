@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabTableFilters.vue
+  @description 表过滤器
+
+  数据表的过滤条件设置组件。
+
+  @module renderer/components/WorkspaceTabTableFilters
+-->
 <template>
    <form class="workspace-table-filters" @submit.prevent="doFilter">
       <div

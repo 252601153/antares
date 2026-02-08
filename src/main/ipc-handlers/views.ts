@@ -1,3 +1,12 @@
+/**
+ * @file views.ts
+ * @description 视图 IPC 处理器
+ *
+ * 本文件处理数据库视图相关的 IPC 事件。
+ * 包括创建、修改、删除视图等。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/ipc-handlers/views
+ */
 import * as antares from 'common/interfaces/antares';
 import { ipcMain } from 'electron';
 

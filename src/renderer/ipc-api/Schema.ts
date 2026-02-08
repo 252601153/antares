@@ -1,3 +1,12 @@
+/**
+ * @file Schema.ts
+ * @description 模式 IPC API
+ *
+ * 本文件封装了数据库模式相关的 IPC 调用。
+ * 包括获取结构、导出模式等功能。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/ipc-api/Schema
+ */
 import { ClientCode, IpcResponse/*, EventInfos, QueryResult, RoutineInfos, TableInfos, TriggerInfos */ } from 'common/interfaces/antares';
 import { ExportOptions } from 'common/interfaces/exporter';
 import { ImportOptions } from 'common/interfaces/importer';

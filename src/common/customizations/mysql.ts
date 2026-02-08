@@ -1,3 +1,14 @@
+/**
+ * @file mysql.ts
+ * @description MySQL/MariaDB 数据库自定义配置
+ *
+ * 本文件定义了 MySQL 和 MariaDB 数据库特有的配置项。
+ * 包括默认端口（3306）、默认用户（root）、数据类型、索引类型、
+ * 外键操作、支持的功能（存储过程、函数、触发器、调度器等）。
+ * 是最完整的数据库配置之一，支持大部分高级功能。
+ *
+ * @module common/customizations/mysql
+ */
 import mysqlTypes from '../data-types/mysql';
 import { Customizations } from '../interfaces/customizations';
 import { defaults } from './defaults';

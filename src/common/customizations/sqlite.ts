@@ -1,3 +1,14 @@
+/**
+ * @file sqlite.ts
+ * @description SQLite 数据库自定义配置
+ *
+ * 本文件定义了 SQLite 数据库特有的配置项。
+ * SQLite 是轻量级文件数据库，支持的功能较精简。
+ * 配置包括文件连接模式、表/视图/触发器支持、
+ * 索引和外键设置等基础功能。
+ *
+ * @module common/customizations/sqlite
+ */
 import sqliteTypes from '../data-types/sqlite';
 import { Customizations } from '../interfaces/customizations';
 import { defaults } from './defaults';

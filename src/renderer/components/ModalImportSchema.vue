@@ -1,3 +1,11 @@
+<!--
+  @file ModalImportSchema.vue
+  @description 导入模式对话框
+
+  导入 SQL 文件的配置。
+
+  @module renderer/components/ModalImportSchema
+-->
 <template>
    <Teleport to="#window-content">
       <div class="modal active">

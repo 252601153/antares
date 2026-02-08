@@ -1,3 +1,11 @@
+<!--
+  @file BaseMap.vue
+  @description 地图组件
+
+  使用 Leaflet 显示地理空间数据。
+
+  @module renderer/components/BaseMap
+-->
 <template>
    <div id="map" class="map" />
 </template>

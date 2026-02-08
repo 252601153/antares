@@ -1,3 +1,11 @@
+<!--
+  @file ModalAskParameters.vue
+  @description 参数输入对话框
+
+  请求输入存储过程参数的对话框。
+
+  @module renderer/components/ModalAskParameters
+-->
 <template>
    <ConfirmModal
       :confirm-text="t('general.run')"

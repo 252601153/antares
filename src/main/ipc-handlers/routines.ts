@@ -1,3 +1,12 @@
+/**
+ * @file routines.ts
+ * @description 存储过程 IPC 处理器
+ *
+ * 本文件处理存储过程相关的 IPC 事件。
+ * 包括创建、修改、删除、执行存储过程等。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/ipc-handlers/routines
+ */
 import * as antares from 'common/interfaces/antares';
 import { ipcMain } from 'electron';
 

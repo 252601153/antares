@@ -1,3 +1,11 @@
+<!--
+  @file ModalNoteNew.vue
+  @description 新建笔记对话框
+
+  创建新的草稿本笔记。
+
+  @module renderer/components/ModalNoteNew
+-->
 <template>
    <ConfirmModal
       size="resize"

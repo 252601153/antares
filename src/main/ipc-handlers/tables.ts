@@ -1,3 +1,13 @@
+/**
+ * @file tables.ts
+ * @description 表操作 IPC 处理器
+ *
+ * 本文件处理数据库表相关的 IPC 事件。
+ * 包括创建表、修改表结构、表数据操作、索引管理等。
+ * 是最重要的 IPC 处理器之一。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/ipc-handlers/tables
+ */
 import customizations from 'common/customizations';
 import { ARRAY, BIT, BLOB, BOOLEAN, DATE, DATETIME, FLOAT, LONG_TEXT, NUMBER, TEXT, TEXT_SEARCH } from 'common/fieldTypes';
 import * as antares from 'common/interfaces/antares';

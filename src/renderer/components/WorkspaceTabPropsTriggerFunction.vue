@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabPropsTriggerFunction.vue
+  @description 触发器函数属性
+
+  编辑 PostgreSQL 触发器函数。
+
+  @module renderer/components/WorkspaceTabPropsTriggerFunction
+-->
 <template>
    <div v-show="isSelected" class="workspace-query-tab column col-12 columns col-gapless">
       <div class="workspace-query-runner column col-12">

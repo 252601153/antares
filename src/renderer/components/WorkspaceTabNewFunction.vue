@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabNewFunction.vue
+  @description 新建函数页面
+
+  创建新数据库函数的界面。
+
+  @module renderer/components/WorkspaceTabNewFunction
+-->
 <template>
    <div v-show="isSelected" class="workspace-query-tab column col-12 columns col-gapless">
       <div class="workspace-query-runner column col-12">

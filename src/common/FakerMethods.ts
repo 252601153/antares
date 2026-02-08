@@ -1,6 +1,16 @@
+/**
+ * @file FakerMethods.ts
+ * @description Faker.js 方法配置类
+ *
+ * 本文件定义了用于生成虚假测试数据的 Faker.js 方法映射。
+ * 这些方法按类别分组（如地址、商业、公司、日期等），并指定每个方法可以生成的数据类型。
+ * 主要用于数据库测试数据填充功能（Faker Rows）。
+ *
+ * @module common/FakerMethods
+ */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export default class {
-   static get _methods () {
+   static get _methods() {
       return [
          { name: 'zipCode', group: 'address', types: ['string'] },
          { name: 'zipCodeByState', group: 'address', types: ['string'] },
@@ -176,7 +186,7 @@ export default class {
       ];
    }
 
-   static getGroups () {
+   static getGroups() {
       const groupsObj = this._methods.reduce((acc, curr) => {
          if (curr.group in acc)
             curr.types.forEach(type => acc[curr.group].add(type));
@@ -202,12 +212,12 @@ export default class {
       });
    }
 
-   static getGroupsByType (type: string) {
+   static getGroupsByType(type: string) {
       if (!type) return [];
       return this.getGroups().filter(group => group.types.includes(type));
    }
 
-   static getMethods ({ type, group }: {type: string; group: string}) {
+   static getMethods({ type, group }: { type: string; group: string }) {
       return this._methods.filter(method => method.group === group && method.types.includes(type)).sort((a, b) => {
          if (a.name < b.name)
             return -1;

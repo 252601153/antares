@@ -1,3 +1,12 @@
+/**
+ * @file exportRows.ts
+ * @description 导出行数据工具
+ *
+ * 本文件提供将表格行数据导出为各种格式的功能。
+ * 支持 CSV、JSON、SQL INSERT 等格式。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/libs/exportRows
+ */
 import { ClientCode } from 'common/interfaces/antares';
 import { jsonToSqlInsert } from 'common/libs/sqlUtils';
 import * as json2php from 'json2php';

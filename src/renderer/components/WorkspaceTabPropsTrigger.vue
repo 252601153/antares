@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabPropsTrigger.vue
+  @description 触发器属性页面
+
+  编辑触发器定义和配置。
+
+  @module renderer/components/WorkspaceTabPropsTrigger
+-->
 <template>
    <div v-show="isSelected" class="workspace-query-tab column col-12 columns col-gapless">
       <div class="workspace-query-runner column col-12">

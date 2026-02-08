@@ -1,3 +1,12 @@
+/**
+ * @file scratchpad.ts
+ * @description 草稿本状态 Store
+ *
+ * 本文件使用 Pinia 管理草稿本/笔记功能的状态。
+ * 支持创建、编辑、删除笔记等操作。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/stores/scratchpad
+ */
 import * as Store from 'electron-store';
 import { defineStore } from 'pinia';
 

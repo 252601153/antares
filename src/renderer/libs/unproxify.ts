@@ -1,3 +1,12 @@
+/**
+ * @file unproxify.ts
+ * @description 解除 Vue 响应式代理
+ *
+ * 本文件提供将 Vue 响应式对象转换为普通对象的功能。
+ * 用于向主进程传递数据时避免代理对象问题。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/libs/unproxify
+ */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { toRaw } from 'vue';
 

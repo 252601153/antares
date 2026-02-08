@@ -1,3 +1,11 @@
+/**
+ * @file Functions.ts
+ * @description 函数 IPC API
+ *
+ * 本文件封装了数据库函数相关的 IPC 调用。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/ipc-api/Functions
+ */
 import { AlterFunctionParams, CreateFunctionParams, IpcResponse } from 'common/interfaces/antares';
 import { ipcRenderer } from 'electron';
 

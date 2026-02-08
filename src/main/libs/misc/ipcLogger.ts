@@ -1,3 +1,12 @@
+/**
+ * @file ipcLogger.ts
+ * @description IPC 日志记录器
+ *
+ * 本文件提供 IPC 通信的日志记录功能。
+ * 用于调试和监控主进程与渲染进程的通信。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/libs/misc/ipcLogger
+ */
 export type LoggerLevel = 'query' | 'error'
 
 export const ipcLogger = ({ content, cUid, level }: {content: string; cUid: string; level: LoggerLevel}) => {

@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabPropsSchedulerTimingModal.vue
+  @description 调度时间对话框
+
+  配置调度任务执行时间。
+
+  @module renderer/components/WorkspaceTabPropsSchedulerTimingModal
+-->
 <template>
    <ConfirmModal
       :confirm-text="t('general.confirm')"

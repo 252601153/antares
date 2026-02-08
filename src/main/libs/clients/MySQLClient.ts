@@ -1,3 +1,13 @@
+/**
+ * @file MySQLClient.ts
+ * @description MySQL/MariaDB 客户端
+ *
+ * 本文件实现了 MySQL 和 MariaDB 的数据库客户端。
+ * 提供完整的 MySQL 特性支持，包括存储过程、触发器、调度器等。
+ * 是功能最完整的客户端实现。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/libs/clients/MySQLClient
+ */
 import SSH2Promise = require('@fabio286/ssh2-promise');
 import SSHConfig from '@fabio286/ssh2-promise/lib/sshConfig';
 import dataTypes from 'common/data-types/mysql';

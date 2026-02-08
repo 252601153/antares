@@ -1,3 +1,11 @@
+<!--
+  @file ForeignKeySelect.vue
+  @description 外键选择器
+
+  选择外键引用值的下拉框。
+
+  @module renderer/components/ForeignKeySelect
+-->
 <template>
    <BaseSelect
       ref="editField"

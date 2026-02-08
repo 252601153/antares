@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabsContext.vue
+  @description 标签页右键菜单
+
+  工作区标签页的右键操作菜单。
+
+  @module renderer/components/WorkspaceTabsContext
+-->
 <template>
    <BaseContextMenu
       :context-event="props.contextEvent"

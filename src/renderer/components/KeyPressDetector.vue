@@ -1,3 +1,11 @@
+<!--
+  @file KeyPressDetector.vue
+  @description 按键检测组件
+
+  检测和显示用户按键的组件。
+
+  @module renderer/components/KeyPressDetector
+-->
 <template>
    <div class="form-group has-icon-right m-0">
       <input

@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabPropsTableDdlModal.vue
+  @description DDL 查看对话框
+
+  显示表的 DDL 语句。
+
+  @module renderer/components/WorkspaceTabPropsTableDdlModal
+-->
 <template>
    <ConfirmModal
       :confirm-text="t('general.confirm')"

@@ -1,3 +1,11 @@
+<!--
+  @file ModalSettingsChangelog.vue
+  @description 更新日志页面
+
+  显示版本更新日志。
+
+  @module renderer/components/ModalSettingsChangelog
+-->
 <template>
    <div class="p-relative">
       <BaseLoader v-if="isLoading" />

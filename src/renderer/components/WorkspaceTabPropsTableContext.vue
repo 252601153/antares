@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabPropsTableContext.vue
+  @description 表属性右键菜单
+
+  表属性页面的右键操作菜单。
+
+  @module renderer/components/WorkspaceTabPropsTableContext
+-->
 <template>
    <BaseContextMenu
       :context-event="contextEvent"

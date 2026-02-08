@@ -1,3 +1,11 @@
+<!--
+  @file BaseUploadInput.vue
+  @description 文件上传组件
+
+  文件选择和上传输入框。
+
+  @module renderer/components/BaseUploadInput
+-->
 <template>
    <label :for="`id_${id}`" class="file-uploader">
       <span class="file-uploader-message">

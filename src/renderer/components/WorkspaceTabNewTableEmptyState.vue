@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabNewTableEmptyState.vue
+  @description 新建表空状态
+
+  新建表时无列定义的占位提示。
+
+  @module renderer/components/WorkspaceTabNewTableEmptyState
+-->
 <template>
    <div class="column col-12 empty">
       <p class="h6 empty-subtitle">

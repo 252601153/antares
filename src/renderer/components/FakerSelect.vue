@@ -1,3 +1,11 @@
+<!--
+  @file FakerSelect.vue
+  @description Faker 方法选择器
+
+  选择 Faker.js 数据生成方法的下拉框。
+
+  @module renderer/components/FakerSelect
+-->
 <template>
    <fieldset class="input-group mb-0">
       <BaseSelect

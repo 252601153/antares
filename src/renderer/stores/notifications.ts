@@ -1,3 +1,12 @@
+/**
+ * @file notifications.ts
+ * @description 通知状态管理 Store
+ *
+ * 本文件使用 Pinia 管理应用通知的状态。
+ * 包括成功、错误、警告等类型的通知消息。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/stores/notifications
+ */
 import { uidGen } from 'common/libs/uidGen';
 import { defineStore } from 'pinia';
 

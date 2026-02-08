@@ -1,3 +1,12 @@
+/**
+ * @file Tables.ts
+ * @description 表 IPC API
+ *
+ * 本文件封装了数据库表相关的 IPC 调用。
+ * 包括查询数据、修改结构等核心功能。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/ipc-api/Tables
+ */
 import { AlterTableParams, CreateTableParams, IpcResponse } from 'common/interfaces/antares';
 import { ipcRenderer } from 'electron';
 

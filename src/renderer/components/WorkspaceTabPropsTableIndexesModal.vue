@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabPropsTableIndexesModal.vue
+  @description 索引编辑对话框
+
+  编辑表索引的模态框。
+
+  @module renderer/components/WorkspaceTabPropsTableIndexesModal
+-->
 <template>
    <ConfirmModal
       :confirm-text="t('general.confirm')"

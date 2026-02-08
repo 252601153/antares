@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabQueryTable.vue
+  @description 查询结果表格
+
+  显示 SQL 查询结果的数据表格。
+
+  @module renderer/components/WorkspaceTabQueryTable
+-->
 <template>
    <div
       ref="tableWrapper"

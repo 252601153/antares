@@ -1,3 +1,12 @@
+/**
+ * @file PostgreSQLClient.ts
+ * @description PostgreSQL 客户端
+ *
+ * 本文件实现了 PostgreSQL 的数据库客户端。
+ * 支持 PostgreSQL 特有功能，如物化视图、触发器函数、数组类型等。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/libs/clients/PostgreSQLClient
+ */
 import SSH2Promise = require('@fabio286/ssh2-promise');
 import SSHConfig from '@fabio286/ssh2-promise/lib/sshConfig';
 import dataTypes from 'common/data-types/postgresql';

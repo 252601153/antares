@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceExploreBarMiscFolderContext.vue
+  @description 文件夹右键菜单
+
+  文件夹节点的右键上下文菜单。
+
+  @module renderer/components/WorkspaceExploreBarMiscFolderContext
+-->
 <template>
    <BaseContextMenu
       :context-event="props.contextEvent"

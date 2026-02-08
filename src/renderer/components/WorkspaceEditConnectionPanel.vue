@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceEditConnectionPanel.vue
+  @description 编辑连接面板
+
+  编辑现有数据库连接的表单面板。
+
+  @module renderer/components/WorkspaceEditConnectionPanel
+-->
 <template>
    <div class="connection-panel">
       <div class="panel">

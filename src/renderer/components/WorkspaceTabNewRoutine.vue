@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabNewRoutine.vue
+  @description 新建存储过程
+
+  创建新存储过程的界面。
+
+  @module renderer/components/WorkspaceTabNewRoutine
+-->
 <template>
    <div v-show="isSelected" class="workspace-query-tab column col-12 columns col-gapless">
       <div class="workspace-query-runner column col-12">

@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceAddConnectionPanel.vue
+  @description 新建连接面板
+
+  创建新数据库连接的表单面板。
+
+  @module renderer/components/WorkspaceAddConnectionPanel
+-->
 <template>
    <div class="connection-panel-wrapper p-relative">
       <div class="connection-panel">

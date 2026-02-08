@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabPropsTableForeignModal.vue
+  @description 外键编辑对话框
+
+  编辑表外键的模态框。
+
+  @module renderer/components/WorkspaceTabPropsTableForeignModal
+-->
 <template>
    <ConfirmModal
       :confirm-text="t('general.confirm')"

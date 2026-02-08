@@ -1,3 +1,12 @@
+/**
+ * @file tableApis.ts
+ * @description 表操作 API 接口
+ *
+ * 本文件定义了表数据操作相关的接口。
+ * 包括增删改查、分页、排序等功能的类型定义。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/common/interfaces/tableApis
+ */
 import { UsableLocale } from '@faker-js/faker';
 
 export interface TableUpdateParams {

@@ -1,3 +1,14 @@
+/**
+ * @file mysql.ts
+ * @description MySQL 数据库数据类型定义
+ *
+ * 本文件定义了 MySQL 数据库支持的所有数据类型。
+ * 按类型分组：整数、浮点数、字符串、二进制、时间、空间、其他。
+ * 每个类型定义了名称、长度、编码、无符号、零填充等属性。
+ * 用于表字段创建和编辑时的类型选择。
+ *
+ * @module common/data-types/mysql
+ */
 import { TypesGroup } from 'common/interfaces/antares';
 
 export default [

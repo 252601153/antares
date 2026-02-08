@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceExploreBarSchema.vue
+  @description 模式导航组件
+
+  显示数据库模式结构的树形组件。
+
+  @module renderer/components/WorkspaceExploreBarSchema
+-->
 <template>
    <details ref="schemaAccordion" class="accordion workspace-explorebar-database">
       <summary

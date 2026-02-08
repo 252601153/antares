@@ -1,3 +1,12 @@
+/**
+ * @file SQLiteClient.ts
+ * @description SQLite 客户端
+ *
+ * 本文件实现了 SQLite 的数据库客户端。
+ * 使用 better-sqlite3 库，支持基本的表、视图、触发器操作。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/libs/clients/SQLiteClient
+ */
 import * as sqlite from 'better-sqlite3';
 import dataTypes from 'common/data-types/sqlite';
 import { DATETIME, FLOAT, NUMBER, TIME } from 'common/fieldTypes';

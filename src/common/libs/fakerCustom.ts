@@ -1,3 +1,12 @@
+/**
+ * @file fakerCustom.ts
+ * @description Faker 自定义生成器
+ *
+ * 本文件提供自定义的数据生成方法。
+ * 扩展 Faker.js 的功能，生成特定格式的测试数据。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/common/libs/fakerCustom
+ */
 import { faker } from '@faker-js/faker';
 import * as moment from 'moment';
 

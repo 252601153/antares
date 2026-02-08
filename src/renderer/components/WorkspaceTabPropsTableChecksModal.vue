@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabPropsTableChecksModal.vue
+  @description 检查约束对话框
+
+  编辑检查约束的模态框。
+
+  @module renderer/components/WorkspaceTabPropsTableChecksModal
+-->
 <template>
    <ConfirmModal
       :confirm-text="t('general.confirm')"

@@ -1,3 +1,12 @@
+/**
+ * @file BaseImporter.ts
+ * @description 导入器基类
+ *
+ * 本文件定义了数据导入器的抽象基类。
+ * 提供导入进度回调、SQL 执行等通用功能。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/libs/importers/BaseImporter
+ */
 import * as importer from 'common/interfaces/importer';
 import * as EventEmitter from 'events';
 import * as fs from 'fs';

@@ -1,3 +1,11 @@
+/**
+ * @file Routines.ts
+ * @description 存储过程 IPC API
+ *
+ * 本文件封装了存储过程相关的 IPC 调用。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/ipc-api/Routines
+ */
 import { AlterRoutineParams, CreateRoutineParams, IpcResponse } from 'common/interfaces/antares';
 import { ipcRenderer } from 'electron';
 

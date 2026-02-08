@@ -1,3 +1,11 @@
+<!--
+  @file QueryEditor.vue
+  @description SQL 查询编辑器
+
+  基于 Ace Editor 的 SQL 编辑器，支持语法高亮和自动补全。
+
+  @module renderer/components/QueryEditor
+-->
 <template>
    <div class="editor-wrapper">
       <div

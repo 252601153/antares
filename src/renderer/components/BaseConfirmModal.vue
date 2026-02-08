@@ -1,3 +1,11 @@
+<!--
+  @file BaseConfirmModal.vue
+  @description 确认对话框组件
+
+  通用的确认/取消操作对话框。
+
+  @module renderer/components/BaseConfirmModal
+-->
 <template>
    <div class="dummy-wrapper">
       <Teleport to="#window-content">

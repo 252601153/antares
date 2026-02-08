@@ -1,3 +1,11 @@
+<!--
+  @file BaseNotification.vue
+  @description 通知组件
+
+  显示成功/错误/警告等通知消息。
+
+  @module renderer/components/BaseNotification
+-->
 <template>
    <div class="toast mt-2" :class="notificationStatus.className">
       <span class="p-vcentered text-left" :class="{'expanded': isExpanded}">

@@ -1,3 +1,12 @@
+/**
+ * @file MySQLlImporter.ts
+ * @description MySQL 导入器
+ *
+ * 本文件实现了 MySQL SQL 文件的导入功能。
+ * 解析和执行 MySQL 格式的 SQL 转储文件。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/libs/importers/sql/MySQLlImporter
+ */
 import * as importer from 'common/interfaces/importer';
 import * as fs from 'fs/promises';
 import * as mysql from 'mysql2';

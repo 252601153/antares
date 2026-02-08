@@ -1,3 +1,13 @@
+/**
+ * @file connections.ts
+ * @description 连接状态管理 Store
+ *
+ * 本文件使用 Pinia 管理数据库连接的状态。
+ * 包括连接列表、连接配置的增删改查操作。
+ * 使用 electron-store 持久化存储连接信息。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/stores/connections
+ */
 import { ConnectionParams } from 'common/interfaces/antares';
 import { uidGen } from 'common/libs/uidGen';
 import * as crypto from 'crypto';

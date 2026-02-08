@@ -1,3 +1,13 @@
+/**
+ * @file BaseClient.ts
+ * @description 数据库客户端基类
+ *
+ * 本文件定义了数据库客户端的抽象基类。
+ * 提供通用的连接、查询、事务等基础方法。
+ * MySQL、PostgreSQL 等客户端都继承此类。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/libs/clients/BaseClient
+ */
 import * as antares from 'common/interfaces/antares';
 import { querySplitter } from 'common/libs/sqlUtils';
 import mysql from 'mysql2/promise';

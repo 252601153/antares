@@ -1,3 +1,11 @@
+/**
+ * @file Schedulers.ts
+ * @description 调度器 IPC API
+ *
+ * 本文件封装了调度器/事件相关的 IPC 调用。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/ipc-api/Schedulers
+ */
 import { AlterEventParams, CreateEventParams, IpcResponse } from 'common/interfaces/antares';
 import { ipcRenderer } from 'electron';
 

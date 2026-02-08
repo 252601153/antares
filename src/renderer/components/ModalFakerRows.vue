@@ -1,3 +1,11 @@
+<!--
+  @file ModalFakerRows.vue
+  @description Faker 数据生成
+
+  配置和生成测试数据的对话框。
+
+  @module renderer/components/ModalFakerRows
+-->
 <template>
    <Teleport to="#window-content">
       <div class="modal active">

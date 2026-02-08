@@ -1,3 +1,13 @@
+/**
+ * @file customizations.ts
+ * @description 数据库自定义配置接口
+ *
+ * 本文件定义了 Customizations 接口类型。
+ * 用于描述各数据库特有的功能和配置项。
+ * 被 mysql.ts、postgresql.ts 等配置文件实现。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/common/interfaces/customizations
+ */
 import { TypesGroup } from './antares';
 import { TableFilterOperator } from './tableApis';
 

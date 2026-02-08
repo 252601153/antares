@@ -1,3 +1,11 @@
+<!--
+  @file BaseTextEditor.vue
+  @description 文本编辑器组件
+
+  基于 Ace Editor 的代码/文本编辑器。
+
+  @module renderer/components/BaseTextEditor
+-->
 <template>
    <div class="editor-wrapper">
       <div

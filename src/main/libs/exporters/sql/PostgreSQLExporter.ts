@@ -1,3 +1,12 @@
+/**
+ * @file PostgreSQLExporter.ts
+ * @description PostgreSQL 导出器
+ *
+ * 本文件实现了 PostgreSQL 格式的数据库导出。
+ * 生成兼容 PostgreSQL 的 SQL 转储文件。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/libs/exporters/sql/PostgreSQLExporter
+ */
 import * as antares from 'common/interfaces/antares';
 import * as exporter from 'common/interfaces/exporter';
 import { valueToSqlString } from 'common/libs/sqlUtils';

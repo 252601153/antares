@@ -1,3 +1,11 @@
+<!--
+  @file ModalConnectionAppearance.vue
+  @description 连接外观设置
+
+  设置连接的图标和颜色。
+
+  @module renderer/components/ModalConnectionAppearance
+-->
 <template>
    <Teleport to="#window-content">
       <div class="modal active">

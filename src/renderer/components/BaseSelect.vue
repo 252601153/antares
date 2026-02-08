@@ -1,3 +1,11 @@
+<!--
+  @file BaseSelect.vue
+  @description 下拉选择组件
+
+  可搜索、支持分组的下拉选择框。
+
+  @module renderer/components/BaseSelect
+-->
 <template>
    <div
       ref="el"

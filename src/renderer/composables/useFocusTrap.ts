@@ -1,3 +1,12 @@
+/**
+ * @file useFocusTrap.ts
+ * @description 焦点陷阱组合式函数
+ *
+ * 本文件提供焦点陷阱功能的组合式函数。
+ * 用于模态框等组件的无障碍访问支持。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/composables/useFocusTrap
+ */
 import { customRef, ref } from 'vue';
 
 const focusableElementsSelector =

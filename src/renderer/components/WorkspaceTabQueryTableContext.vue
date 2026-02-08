@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabQueryTableContext.vue
+  @description 结果表格右键菜单
+
+  查询结果的右键操作菜单。
+
+  @module renderer/components/WorkspaceTabQueryTableContext
+-->
 <template>
    <BaseContextMenu
       :context-event="contextEvent"

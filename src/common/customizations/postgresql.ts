@@ -1,3 +1,14 @@
+/**
+ * @file postgresql.ts
+ * @description PostgreSQL 数据库自定义配置
+ *
+ * 本文件定义了 PostgreSQL 数据库特有的配置项。
+ * 包括默认端口（5432）、默认用户（postgres）、默认数据库（postgres）、
+ * 支持的功能（物化视图、触发器函数、多种语言等 PostgreSQL 特性）。
+ * 支持数组类型、过程语言（plpgsql、SQL 等）。
+ *
+ * @module common/customizations/postgresql
+ */
 import postgresqlTypes from '../data-types/postgresql';
 import { Customizations } from '../interfaces/customizations';
 import { defaults } from './defaults';

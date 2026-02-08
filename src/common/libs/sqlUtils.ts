@@ -1,3 +1,13 @@
+/**
+ * @file sqlUtils.ts
+ * @description SQL 工具函数集
+ *
+ * 本文件提供 SQL 相关的工具函数。
+ * 包括 SQL 解析、转义、格式化等功能。
+ * 是 SQL 处理的核心工具库。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/common/libs/sqlUtils
+ */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-useless-escape */
 import { lineString, point, polygon } from '@turf/helpers';

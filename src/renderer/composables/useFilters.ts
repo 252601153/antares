@@ -1,3 +1,12 @@
+/**
+ * @file useFilters.ts
+ * @description 过滤器组合式函数
+ *
+ * 本文件提供表格数据过滤的组合式函数。
+ * 用于构建和应用查询过滤条件。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/composables/useFilters
+ */
 import * as moment from 'moment';
 
 export function useFilters () {

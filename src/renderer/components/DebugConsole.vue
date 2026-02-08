@@ -1,3 +1,11 @@
+<!--
+  @file DebugConsole.vue
+  @description 调试控制台组件
+
+  显示查询日志和调试信息的控制台。
+
+  @module renderer/components/DebugConsole
+-->
 <template>
    <div
       ref="wrapper"

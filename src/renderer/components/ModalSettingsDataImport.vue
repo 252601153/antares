@@ -1,3 +1,11 @@
+<!--
+  @file ModalSettingsDataImport.vue
+  @description 导入设置页面
+
+  数据导入的设置选项。
+
+  @module renderer/components/ModalSettingsDataImport
+-->
 <template>
    <Teleport to="#window-content">
       <div class="modal modal-sm active">

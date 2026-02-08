@@ -1,3 +1,11 @@
+<!--
+  @file TheNotificationsBoard.vue
+  @description 通知面板组件
+
+  显示所有通知消息的面板。
+
+  @module renderer/components/TheNotificationsBoard
+-->
 <template>
    <div
       id="notifications-board"

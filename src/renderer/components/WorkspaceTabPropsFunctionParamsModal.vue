@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabPropsFunctionParamsModal.vue
+  @description 函数参数对话框
+
+  编辑函数参数的模态框。
+
+  @module renderer/components/WorkspaceTabPropsFunctionParamsModal
+-->
 <template>
    <ConfirmModal
       :confirm-text="t('general.confirm')"

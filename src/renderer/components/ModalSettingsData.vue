@@ -1,3 +1,11 @@
+<!--
+  @file ModalSettingsData.vue
+  @description 数据设置页面
+
+  数据相关的设置选项。
+
+  @module renderer/components/ModalSettingsData
+-->
 <template>
    <div class="container">
       <div class="columns">

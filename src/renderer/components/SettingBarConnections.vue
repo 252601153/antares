@@ -1,3 +1,11 @@
+<!--
+  @file SettingBarConnections.vue
+  @description 连接列表组件
+
+  设置栏中的连接项列表。
+
+  @module renderer/components/SettingBarConnections
+-->
 <template>
    <Draggable
       :list="localList"

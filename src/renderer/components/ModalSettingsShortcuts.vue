@@ -1,3 +1,11 @@
+<!--
+  @file ModalSettingsShortcuts.vue
+  @description 快捷键设置
+
+  自定义快捷键的设置页面。
+
+  @module renderer/components/ModalSettingsShortcuts
+-->
 <template>
    <div class="p-relative">
       <div class="shortcuts-tools pb-2 px-2">

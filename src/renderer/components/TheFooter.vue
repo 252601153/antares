@@ -1,3 +1,11 @@
+<!--
+  @file TheFooter.vue
+  @description 页脚状态栏组件
+
+  显示连接状态、数据库信息等状态信息。
+
+  @module renderer/components/TheFooter
+-->
 <template>
    <div
       id="footer"

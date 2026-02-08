@@ -1,3 +1,12 @@
+/**
+ * @file Connection.ts
+ * @description 连接 IPC API
+ *
+ * 本文件封装了数据库连接相关的 IPC 调用。
+ * 提供便捷的方法进行连接管理。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/ipc-api/Connection
+ */
 import { ConnectionParams, IpcResponse } from 'common/interfaces/antares';
 import { ipcRenderer } from 'electron';
 

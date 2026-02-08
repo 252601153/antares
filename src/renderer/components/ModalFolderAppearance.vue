@@ -1,3 +1,11 @@
+<!--
+  @file ModalFolderAppearance.vue
+  @description 文件夹外观设置
+
+  设置连接文件夹的外观。
+
+  @module renderer/components/ModalFolderAppearance
+-->
 <template>
    <Teleport to="#window-content">
       <div class="modal active">

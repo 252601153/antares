@@ -1,3 +1,14 @@
+/**
+ * @file index.ts
+ * @description 渲染进程入口文件
+ *
+ * 本文件是 Antares SQL Client 的渲染进程入口。
+ * 负责初始化 Vue 应用、Pinia 状态管理、i18n 国际化、
+ * 注册全局指令和插件、设置 IPC 通信监听器。
+ * 处理主进程发来的异常通知、更新状态、快捷键事件等。
+ *
+ * @module renderer
+ */
 'use strict';
 import 'floating-vue/dist/style.css';
 import 'leaflet/dist/leaflet.css';

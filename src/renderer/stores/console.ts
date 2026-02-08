@@ -1,3 +1,12 @@
+/**
+ * @file console.ts
+ * @description 控制台状态管理 Store
+ *
+ * 本文件使用 Pinia 管理调试控制台的状态。
+ * 记录查询日志、错误信息、调试信息等。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/renderer/stores/console
+ */
 import { defineStore } from 'pinia';
 
 const logsSize = 1000;

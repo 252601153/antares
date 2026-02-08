@@ -1,3 +1,11 @@
+<!--
+  @file ModalSettingsDataExport.vue
+  @description 导出设置页面
+
+  数据导出的设置选项。
+
+  @module renderer/components/ModalSettingsDataExport
+-->
 <template>
    <Teleport to="#window-content">
       <div class="modal active">

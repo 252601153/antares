@@ -1,3 +1,11 @@
+<!--
+  @file ModalSettingsUpdate.vue
+  @description 更新设置页面
+
+  应用更新相关的设置。
+
+  @module renderer/components/ModalSettingsUpdate
+-->
 <template>
    <div class="empty">
       <div class="empty-icon">

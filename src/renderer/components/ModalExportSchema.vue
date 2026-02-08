@@ -1,3 +1,11 @@
+<!--
+  @file ModalExportSchema.vue
+  @description 导出模式对话框
+
+  导出数据库结构和数据的配置。
+
+  @module renderer/components/ModalExportSchema
+-->
 <template>
    <Teleport to="#window-content">
       <div class="modal active">

@@ -1,3 +1,12 @@
+/**
+ * @file MySQLParser.ts
+ * @description MySQL SQL 解析器
+ *
+ * 本文件实现了 MySQL SQL 语句的解析功能。
+ * 用于导入时分析 SQL 文件结构。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/libs/parsers/MySQLParser
+ */
 import { Transform, TransformCallback, TransformOptions } from 'stream';
 
 export default class MySQLParser extends Transform {

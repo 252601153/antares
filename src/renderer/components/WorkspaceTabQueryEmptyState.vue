@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabQueryEmptyState.vue
+  @description 查询空状态
+
+  无查询结果时的占位提示。
+
+  @module renderer/components/WorkspaceTabQueryEmptyState
+-->
 <template>
    <div class="container">
       <div class="columns">

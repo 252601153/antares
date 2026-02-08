@@ -1,3 +1,14 @@
+/**
+ * @file shortcuts.ts
+ * @description 键盘快捷键配置定义
+ *
+ * 本文件定义了应用程序的所有键盘快捷键。
+ * 包括快捷键事件映射（shortcutEvents）和默认快捷键配置（shortcuts）。
+ * 支持跨平台（macOS、Linux、Windows）的快捷键绑定。
+ * 功能包括：运行查询、标签页操作、格式化、导航等。
+ *
+ * @module common/shortcuts
+ */
 export const shortcutEvents: Record<string, { i18n: string; i18nParam?: string | number; context?: 'tab' | 'main' }> = {
    'run-or-reload': { i18n: 'application.runOrReload', context: 'tab' },
    'open-new-tab': { i18n: 'application.openNewTab', context: 'tab' },

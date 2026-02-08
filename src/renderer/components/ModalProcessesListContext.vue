@@ -1,3 +1,11 @@
+<!--
+  @file ModalProcessesListContext.vue
+  @description 进程右键菜单
+
+  进程列表的右键操作菜单。
+
+  @module renderer/components/ModalProcessesListContext
+-->
 <template>
    <BaseContextMenu
       :context-event="props.contextEvent"

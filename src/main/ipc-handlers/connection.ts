@@ -1,3 +1,12 @@
+/**
+ * @file connection.ts
+ * @description 连接管理 IPC 处理器
+ *
+ * 本文件处理数据库连接相关的 IPC 事件。
+ * 包括建立连接、断开连接、测试连接等。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/ipc-handlers/connection
+ */
 import * as antares from 'common/interfaces/antares';
 import { ipcMain } from 'electron';
 import * as fs from 'fs';

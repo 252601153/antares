@@ -1,3 +1,12 @@
+/**
+ * @file application.ts
+ * @description 应用级 IPC 处理器
+ *
+ * 本文件处理应用程序级别的 IPC 事件。
+ * 包括窗口操作、系统信息、应用设置等。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/ipc-handlers/application
+ */
 import { app, dialog, ipcMain, safeStorage } from 'electron';
 import * as Store from 'electron-store';
 import * as fs from 'fs';

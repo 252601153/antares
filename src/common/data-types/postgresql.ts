@@ -1,3 +1,14 @@
+/**
+ * @file postgresql.ts
+ * @description PostgreSQL 数据库数据类型定义
+ *
+ * 本文件定义了 PostgreSQL 数据库支持的所有数据类型。
+ * 按类型分组：整数、浮点数、货币、字符串、二进制、时间、布尔、几何、
+ * 网络、位、文本搜索、UUID、XML、JSON 等。
+ * PostgreSQL 支持的数据类型比其他数据库更丰富。
+ *
+ * @module common/data-types/postgresql
+ */
 import { TypesGroup } from 'common/interfaces/antares';
 
 export default [

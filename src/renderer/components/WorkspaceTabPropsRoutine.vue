@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabPropsRoutine.vue
+  @description 存储过程属性
+
+  编辑存储过程定义和参数。
+
+  @module renderer/components/WorkspaceTabPropsRoutine
+-->
 <template>
    <div v-show="isSelected" class="workspace-query-tab column col-12 columns col-gapless">
       <div class="workspace-query-runner column col-12">

@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceEmptyState.vue
+  @description 空状态组件
+
+  无内容时显示的占位提示。
+
+  @module renderer/components/WorkspaceEmptyState
+-->
 <template>
    <div class="column col-12 empty">
       <div class="empty-icon">

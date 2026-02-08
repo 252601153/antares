@@ -1,3 +1,12 @@
+/**
+ * @file exporter.ts
+ * @description 数据导出接口定义
+ *
+ * 本文件定义了数据导出功能相关的接口。
+ * 包括导出选项、导出结果等类型定义。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/common/interfaces/exporter
+ */
 export interface TableParams {
    table: string;
    includeStructure: boolean;

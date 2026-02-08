@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceExploreBarMiscContext.vue
+  @description 杂项右键菜单
+
+  其他节点的右键上下文菜单。
+
+  @module renderer/components/WorkspaceExploreBarMiscContext
+-->
 <template>
    <BaseContextMenu
       :context-event="contextEvent"

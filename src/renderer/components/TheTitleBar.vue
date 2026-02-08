@@ -1,3 +1,11 @@
+<!--
+  @file TheTitleBar.vue
+  @description 标题栏组件
+
+  应用程序自定义标题栏，包含窗口控制按钮。
+
+  @module renderer/components/TheTitleBar
+-->
 <template>
    <div
       id="titlebar"

@@ -1,3 +1,12 @@
+/**
+ * @file ShortcutRegister.ts
+ * @description 快捷键注册管理器
+ *
+ * 本文件负责应用程序快捷键的注册和管理。
+ * 支持全局快捷键和局部快捷键，跨平台兼容。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/libs/ShortcutRegister
+ */
 import { ShortcutRecord, shortcuts } from 'common/shortcuts';
 import { BrowserWindow, globalShortcut, Menu, MenuItem, MenuItemConstructorOptions } from 'electron';
 import * as Store from 'electron-store';

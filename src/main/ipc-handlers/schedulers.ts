@@ -1,3 +1,12 @@
+/**
+ * @file schedulers.ts
+ * @description 调度器 IPC 处理器
+ *
+ * 本文件处理调度器/事件相关的 IPC 事件。
+ * 包括创建、修改、删除调度任务等。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/ipc-handlers/schedulers
+ */
 import * as antares from 'common/interfaces/antares';
 import { ipcMain } from 'electron';
 

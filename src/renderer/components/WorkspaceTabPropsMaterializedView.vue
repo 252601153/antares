@@ -1,3 +1,11 @@
+<!--
+  @file WorkspaceTabPropsMaterializedView.vue
+  @description 物化视图属性
+
+  编辑物化视图的属性。
+
+  @module renderer/components/WorkspaceTabPropsMaterializedView
+-->
 <template>
    <div v-show="isSelected" class="workspace-query-tab column col-12 columns col-gapless">
       <div class="workspace-query-runner column col-12">

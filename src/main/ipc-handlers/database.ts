@@ -1,3 +1,12 @@
+/**
+ * @file database.ts
+ * @description 数据库操作 IPC 处理器
+ *
+ * 本文件处理数据库级别的 IPC 事件。
+ * 包括创建数据库、删除数据库等。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/main/ipc-handlers/database
+ */
 import * as antares from 'common/interfaces/antares';
 import { ipcMain } from 'electron';
 

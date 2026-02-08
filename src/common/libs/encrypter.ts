@@ -1,3 +1,12 @@
+/**
+ * @file encrypter.ts
+ * @description 加密解密工具
+ *
+ * 本文件提供密码加密和解密功能。
+ * 用于安全存储数据库连接密码等敏感信息。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/common/libs/encrypter
+ */
 import * as crypto from 'crypto';
 
 const algorithm = 'aes-256-gcm';

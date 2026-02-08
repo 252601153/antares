@@ -1,3 +1,13 @@
+/**
+ * @file antares.ts
+ * @description 核心应用接口定义
+ *
+ * 本文件定义了 Antares SQL Client 的核心 TypeScript 接口。
+ * 包括连接配置、数据库对象、查询结果、表结构等核心类型定义。
+ * 被整个应用程序广泛使用，是类型系统的基础。
+ *
+ * @module /Users/zhangzhiming/code/antares/src/common/interfaces/antares
+ */
 import SSHConfig from '@fabio286/ssh2-promise/lib/sshConfig';
 import * as mysql from 'mysql2/promise';
 import * as pg from 'pg';
